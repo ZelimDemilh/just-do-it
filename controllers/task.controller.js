@@ -1,6 +1,8 @@
 const Task = require("../models/Task.model")
 const User = require("../models/User.model")
 const jwt = require("jsonwebtoken")
+const multer = require("multer");
+const upload = multer({ dest: "uploads/" });
 
 module.exports.taskController = {
     addTask: async (req, res) => {

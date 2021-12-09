@@ -2,15 +2,15 @@ const Category = require('../models/Category.model')
 
 module.exports.categoriesController = {
   addCategory: async (req, res) => {
-
-    const { name } = req.body
     try{
+      const { name } = req.body
+
       const category = await Category.create({
         name: name
       })
       res.json(category)
     }catch (e) {
-      res.json(e)
+      res.json({error: "Ошибка при добавлении категории"})
     }
   },
   getCategories: async (req, res) => {
@@ -18,36 +18,39 @@ module.exports.categoriesController = {
       const categories = await Category.find()
       res.json(categories)
     }catch (e) {
-      res.json(e)
+      res.json({error: "Ошибка при выведении категории"})
     }
   },
   removeCategory: async (req, res) => {
     try{
-     await Category.findByIdAndRemove(req.params.id)
+     const {id} = req.params
+
+     await Category.findByIdAndRemove(id)
       res.json("Категория успешно удалена")
     }catch (e) {
-      res.json(e)
+      res.json({error: "Ошибка при добавлении категории"})
     }
   },
   editCategory: async (req, res) => {
-
-    const {name} = req.body
-
     try{
-    await  Category.findByIdAndUpdate(req.params.id, {
+      const {name} = req.body
+
+      await  Category.findByIdAndUpdate(req.params.id, {
         name: name
       })
       res.json("Категория успешно изменена")
     }catch (e) {
-      res.json(e)
+      res.json({error: "Ошибка при изменении категория"})
     }
   },
   getOneCategory: async (req, res) => {
     try{
-      const category = await Category.findById(req.params.id)
+      const {id} = req.params
+
+      const category = await Category.findById(id)
       res.json(category)
     }catch (e) {
-      res.json(e)
+      res.json({error: "Ошибка при выведении одной категории"})
     }
   }
 }

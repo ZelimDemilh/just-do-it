@@ -25,7 +25,9 @@ module.exports.articlesController = {
   },
   removeArticle: async (req, res) => {
     try{
-      await Article.findByIdAndRemove(req.params.id)
+      const {id} = req.params
+
+      await Article.findByIdAndRemove(id)
       res.json("Успешное удаление")
     }catch (e) {
       res.json({error: "Ошибка при удалении статьи"})
@@ -33,9 +35,10 @@ module.exports.articlesController = {
   },
   editArticle: async (req, res) => {
     try{
+      const {id} = req.params
       const {header, text} = req.body
 
-      const article = await Article.findByIdAndUpdate(req.params.id, {
+      const article = await Article.findByIdAndUpdate(id, {
         header: header,
         text: text
       })
@@ -46,7 +49,9 @@ module.exports.articlesController = {
   },
   getOneArticle: async (req, res) => {
     try{
-      const article = await Article.findById(req.params.id)
+      const {id} = req.params
+
+      const article = await Article.findById(id)
       res.json(article)
     }catch (e) {
       res.json({error: "Ошибка при выведении одной статьи"})

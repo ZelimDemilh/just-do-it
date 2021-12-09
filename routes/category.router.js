@@ -5,8 +5,8 @@ const router = Router()
 
 router.get('/', categoriesController.getCategories)
 router.post('/add', categoriesController.addCategory)
-router.delete('/:id', categoriesController.removeCategory)
-router.patch('/:id', categoriesController.editCategory)
+router.delete('/remove/:id', categoriesController.removeCategory)
+router.patch('/update/:id', categoriesController.editCategory)
 router.get('/:id', categoriesController.getOneCategory)
 
 module.exports = router

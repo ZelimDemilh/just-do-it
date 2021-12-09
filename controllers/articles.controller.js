@@ -3,11 +3,12 @@ const Article = require('../models/Article.model')
 module.exports.articlesController = {
   addArticle: async (req, res) => {
     try{
-      const {header, text} = req.body
+      const {header, text, image} = req.body
 
       const article = await Article.create({
       header: header,
       text: text,
+      image: image
     })
       res.json(article)
     }catch (e) {

@@ -8,7 +8,6 @@ module.exports.articlesController = {
       const article = await Article.create({
       header: header,
       text: text,
-      image: req.body.image
     })
       res.json(article)
     }catch (e) {

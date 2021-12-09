@@ -9,7 +9,6 @@ const articleSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  image: String
 })
 
 const Article = mongoose.model('Article', articleSchema)

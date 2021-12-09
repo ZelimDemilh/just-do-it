@@ -31,7 +31,7 @@ module.exports.taskController = {
         try {
             const { id } = req.params.id
 
-            const {authorization} = req.headers
+            const { authorization } = req.headers
 
             const [type, token] = authorization.split(" ")
 
@@ -52,7 +52,7 @@ module.exports.taskController = {
     },
     getAllTask: async (req, res) => {
         try {
-            const tasks = Task.find()
+            const tasks = await Task.find()
             res.json(tasks)
         } catch (e) {
             res.json({error: "ошибка при получении данных заданий"})
@@ -61,10 +61,30 @@ module.exports.taskController = {
     getTaskById: async (req, res) => {
         try {
             const {id} = req.params.id
-            const task = Task.findById()
+            const task = await Task.findById()
             res.json(task)
         }catch (e) {
             res.json({error: "Ошибка при получении данных задания"})
+        }
+    },
+    updateTask: async (req, res) => {
+        try {
+
+            const { id } = req.params.id
+
+            const { header, description, location, price,} = req.body
+
+            await Task.findByIdAndUpdate(id, {
+                header,
+                description,
+                location,
+                price
+            })
+
+            res.json("Изменения прошли успешно")
+
+        } catch (e) {
+            res.json({error: "Ошибка при изменении"})
         }
     }
 }

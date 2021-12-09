@@ -9,7 +9,6 @@ module.exports.articlesController = {
       header: header,
       text: text,
       image: req.body.image
-      //image нужно будет поменять
     })
       res.json(article)
     }catch (e) {

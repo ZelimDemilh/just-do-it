@@ -1,43 +1,49 @@
 const mongoose = require("mongoose")
 
 const userSchema = mongoose.Schema({
-    login: {
-        type: String,
-        required: true,
-        unique: true
+  login: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  firstName: {
+    type: String,
+    required: false,
+  },
+  lastName: {
+    type: String,
+    required: false,
+  },
+  mail: {
+    type: String,
+    required: false,
+  },
+  phone: {
+    type: String,
+    required: false,
+  },
+  tasks: [
+    {
+      ref: "Task",
+      type: mongoose.Schema.Types.ObjectId,
     },
-    password: {
-        type: String,
-        required: true
-    },
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
-        type: String,
-        required: true
-    },
-    mail: {
-        type: String,
-        required: true
-    },
-    phone: {
-        type: String,
-        required: true
-    },
-    tasks: [{
-        ref: "Task",
-        type: mongoose.Schema.Types.ObjectId
-    }],
-    rating: {
-        type: Number,
-        required: true
-    },
-    avatar: {
-        type: String,
-        required: true
-    }
+  ],
+  rating: {
+    type: Number,
+    default: 0,
+  },
+  avatar: {
+    type: String,
+    required: false,
+  },
+  isMaster: {
+    type: Boolean,
+    default: true,
+  },
 })
 
 const User = mongoose.model("User", userSchema)

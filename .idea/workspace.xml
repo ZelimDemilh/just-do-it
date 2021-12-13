@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28133572-d64d-4354-967f-029360d22de9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/users.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/auth.middlewares.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/default.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/task.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/task.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/imageUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/imageUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Task.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Task.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/task.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/task.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +32,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.18.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../just-do-it" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\WorkWeek\13 week\just-do-it-back\node_modules\prettier" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkWeek\13 week\just-do-it-back\uploads" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WorkWeek\13 week\just-do-it-back\middlewares" />
     </key>
@@ -60,7 +56,7 @@
       <updated>1638967811683</updated>
       <workItem from="1638967812964" duration="15673000" />
       <workItem from="1639047687005" duration="7051000" />
-      <workItem from="1639382307119" duration="1389000" />
+      <workItem from="1639382307119" duration="4083000" />
     </task>
     <servers />
   </component>

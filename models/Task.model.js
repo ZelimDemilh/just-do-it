@@ -13,7 +13,6 @@ const taskSchema = mongoose.Schema({
         ref: "User",
         type: mongoose.Schema.Types.ObjectId
     }
-
 })
 
 const Task = mongoose.model("Task", taskSchema)

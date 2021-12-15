@@ -15,18 +15,33 @@ module.exports.usersController = {
 
   registration: async (req, res) => {
     try {
-      const { login, password } = req.body
+      const { login, password, firstName, lastName, email, phone, isMaster } =
+        req.body
+
+      const candidate = await User.findOne({ login })
+
+      if (candidate) {
+        return res.status(400).json({ error: "Имя пользователя занято" })
+      }
 
       const hash = await bcrypt.hash(
         password,
         Number(process.env.BCRYPT_ROUNDS)
       )
 
-      const user = await User.create({ login: login, password: hash })
+      await User.create({
+        login,
+        password: hash,
+        firstName,
+        lastName,
+        email,
+        phone,
+        isMaster,
+      })
 
-      res.json(user)
-    } catch (e) {
-      res.status(400).json({ error: "Ошибка регистрации" })
+      res.json("Пользователь зарегистрирован")
+    } catch (error) {
+      res.status(400).json({ error: `Ошибка регистрации: ${error.toString()}` })
     }
   },
 

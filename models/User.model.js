@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: false,
   },
-  mail: {
+  email: {
     type: String,
     required: false,
   },
@@ -26,18 +26,13 @@ const userSchema = mongoose.Schema({
     type: String,
     required: false,
   },
-  tasks: [
-    {
-      ref: "Task",
-      type: mongoose.Schema.Types.ObjectId,
-    },
-  ],
   rating: {
     type: Number,
     default: 0,
   },
   avatar: {
     type: String,
+    default: "../uploads/default.jpg",
     required: false,
   },
   isMaster: {

@@ -95,4 +95,12 @@ module.exports.usersController = {
       res.status(401).json({ error: "Ошибка авторизации" })
     }
   },
+  getUserById: async (req ,res) => {
+    try {
+      const user = await User.findById(req.params.id)
+      res.json(user)
+    } catch (e) {
+      res.status(401).json({error:'Ошибка получения данных'})
+    }
+  }
 }

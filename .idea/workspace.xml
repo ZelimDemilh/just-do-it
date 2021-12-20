@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="28133572-d64d-4354-967f-029360d22de9" name="Default Changelist" comment="" />
+=======
     <list default="true" id="28133572-d64d-4354-967f-029360d22de9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
@@ -8,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/models/User.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.model.js" afterDir="false" />
 >>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
     </list>
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,10 +49,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
 =======
     <property name="javascript.nodejs.core.library.configured.version" value="14.18.0" />
+<<<<<<< HEAD
+    <property name="javascript.nodejs.core.library.typings.version" value="14.18.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../just-do-it" />
 >>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\WorkWeek\13 week\just-do-it-back\node_modules\prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -58,6 +68,7 @@
       <recent name="D:\WorkWeek\13 week\just-do-it-back\middlewares" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -72,6 +83,12 @@
       <workItem from="1639047687005" duration="7051000" />
 <<<<<<< HEAD
       <workItem from="1639382307119" duration="4083000" />
+<<<<<<< HEAD
+      <workItem from="1639659863716" duration="1220000" />
+      <workItem from="1639663595088" duration="14000" />
+      <workItem from="1639740474938" duration="4130000" />
+      <workItem from="1639986728147" duration="1302000" />
+=======
       <workItem from="1639492609642" duration="36000" />
       <workItem from="1639492646068" duration="4995000" />
 =======
@@ -80,10 +97,14 @@
       <workItem from="1639643093817" duration="19000" />
       <workItem from="1639643255578" duration="455000" />
 >>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
+<<<<<<< HEAD
+    <option name="version" value="3" />
+=======
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
@@ -123,5 +144,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1639031041894" />
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
   </component>
 </project>

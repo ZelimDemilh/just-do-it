@@ -7,17 +7,19 @@ const upload = multer({ dest: "uploads/" })
 module.exports.taskController = {
   addTask: async (req, res) => {
     try {
-      const { header, description, location, price } = req.body
+      const { header, description, category, latitude, longitude, price } = req.body
 
       const newTask = await Task.create({
         header,
         description,
-        location,
+        category,
+        latitude,
+        longitude,
         price,
         user: req.user.id,
       })
 
-      res.json("Задача успешно создана")
+      res.json(newTask)
     } catch (e) {
       res.status(401).json({ error: "Ошибка при создании задачи" })
     }

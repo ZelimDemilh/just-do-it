@@ -4,7 +4,12 @@ const taskSchema = mongoose.Schema({
     header: String,
     description: String,
     price: Number,
-    location: String,
+    category: {
+        ref: "Category",
+        type: mongoose.Schema.Types.ObjectId
+    },
+    latitude: String,
+    longitude: String,
     status: {
         type: Number,
         default: 0

@@ -44,7 +44,28 @@ module.exports.usersController = {
       res.status(400).json({ error: `Ошибка регистрации: ${error.toString()}` })
     }
   },
+  uploadUser: async (req, res) => {
+    try{
+      const { login, password, firstName, lastName, email, phone, isMaster } = req.body
 
+      const {authorization} = req.headers
+
+      const [type, token] = authorization.split(" ")
+
+      const payload = await jwt.verify(token, process.env.SECRET_JWT_KEY)
+
+      const newDateUser = await User.findByIdAndUpdate(payload.id, {
+        firstName,
+        lastName,
+        img: req.file.path
+      })
+
+      res.json({message: "изменения прошли успешно"})
+
+    }catch (e) {
+      res.json({error: "ошибка при изменении профиля"})
+    }
+  },
   login: async (req, res) => {
     try {
       const { login, password } = req.body

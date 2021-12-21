@@ -32,7 +32,7 @@ const userSchema = mongoose.Schema({
   },
   avatar: {
     type: String,
-    default: "../uploads/default.jpg",
+    default:"../uploads/default.jpg",
     required: false,
   },
   isMaster: {

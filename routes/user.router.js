@@ -9,6 +9,6 @@ router.post("/login", usersController.login) // Отправление данн�
 router.get("/profile/:id",usersController.getUserById) // Получение данных пользователя
 router.delete("/remove/:id") // Удаление пользователя
 router.get("/", usersController.getAllUsers) // Вывод всех пользователей
-router.patch("/update/:id", upload.single("avatar"),usersController.pathUser) // Изменение аватара пользователя
+router.post("/update/:id", upload.single("avatar"), usersController.pathUser) // Изменение аватара пользователя
 
 module.exports = router

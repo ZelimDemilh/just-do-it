@@ -107,13 +107,15 @@ module.exports.usersController = {
     try{
       const { id } = req.params
 
-      console.log(req)
+      const { path } = req.file
+
+      console.log(req.file);
 
       const user = await User.findByIdAndUpdate(id, {
-        img: path
+        avatar: path
       })
 
-      res.json({message: "аватар изменен"})
+      res.json({message: "аватар изменен", path: req.file.path})
     }catch (e) {
       res.status(401).json({error:'Ошибка получения данных'+ e})
     }

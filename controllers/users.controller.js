@@ -44,7 +44,28 @@ module.exports.usersController = {
       res.status(400).json({ error: `Ошибка регистрации: ${error.toString()}` })
     }
   },
+  uploadUser: async (req, res) => {
+    try{
+      const { login, password, firstName, lastName, email, phone, isMaster } = req.body
 
+      const {authorization} = req.headers
+
+      const [type, token] = authorization.split(" ")
+
+      const payload = await jwt.verify(token, process.env.SECRET_JWT_KEY)
+
+      const newDateUser = await User.findByIdAndUpdate(payload.id, {
+        firstName,
+        lastName,
+        img: req.file.path
+      })
+
+      res.json({message: "изменения прошли успешно"})
+
+    }catch (e) {
+      res.json({error: "ошибка при изменении профиля" + e})
+    }
+  },
   login: async (req, res) => {
     try {
       const { login, password } = req.body
@@ -74,4 +95,27 @@ module.exports.usersController = {
       res.status(401).json({ error: "Ошибка авторизации" })
     }
   },
+  getUserById: async (req ,res) => {
+    try {
+      const user = await User.findById(req.params.id)
+      res.json(user)
+    } catch (e) {
+      res.status(401).json({error:'Ошибка получения данных'})
+    }
+  },
+  pathUser: async (req, res) => {
+    try{
+      const { id } = req.params
+
+      console.log(req)
+
+      const user = await User.findByIdAndUpdate(id, {
+        img: path
+      })
+
+      res.json({message: "аватар изменен"})
+    }catch (e) {
+      res.status(401).json({error:'Ошибка получения данных'+ e})
+    }
+  }
 }

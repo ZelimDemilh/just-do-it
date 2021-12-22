@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="28133572-d64d-4354-967f-029360d22de9" name="Default Changelist" comment="" />
+=======
     <list default="true" id="28133572-d64d-4354-967f-029360d22de9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/models/User.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.model.js" afterDir="false" />
+>>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
     </list>
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,10 +38,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="javascript.nodejs.core.library.configured.version" value="14.18.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../just-do-it-front" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+=======
     <property name="javascript.nodejs.core.library.configured.version" value="14.18.0" />
+<<<<<<< HEAD
+    <property name="javascript.nodejs.core.library.typings.version" value="14.18.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../just-do-it" />
+>>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\WorkWeek\13 week\just-do-it-back\node_modules\prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -44,6 +68,7 @@
       <recent name="D:\WorkWeek\13 week\just-do-it-back\middlewares" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -56,25 +81,76 @@
       <updated>1638967811683</updated>
       <workItem from="1638967812964" duration="15673000" />
       <workItem from="1639047687005" duration="7051000" />
+<<<<<<< HEAD
+      <workItem from="1639382307119" duration="4083000" />
+<<<<<<< HEAD
+      <workItem from="1639659863716" duration="1220000" />
+      <workItem from="1639663595088" duration="14000" />
+      <workItem from="1639740474938" duration="4130000" />
+      <workItem from="1639986728147" duration="1302000" />
+=======
+      <workItem from="1639492609642" duration="36000" />
+      <workItem from="1639492646068" duration="4995000" />
+=======
       <workItem from="1639382307119" duration="4392000" />
       <workItem from="1639551775689" duration="2409000" />
       <workItem from="1639643093817" duration="19000" />
+<<<<<<< HEAD
       <workItem from="1639643255578" duration="2626000" />
       <workItem from="1639687121604" duration="682000" />
       <workItem from="1639727270652" duration="618000" />
       <workItem from="1639823861607" duration="758000" />
       <workItem from="1640091419552" duration="2973000" />
+=======
+      <workItem from="1639643255578" duration="455000" />
+>>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
+>>>>>>> 704b979adb3beae5542808bccb082523aaba7eb9
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
+<<<<<<< HEAD
+    <option name="version" value="3" />
+=======
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1640093022322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1640093022322" />
+=======
+<<<<<<< HEAD
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1639492907443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1639383106592" />
+    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1639492907443" />
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1639492889586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639492889586" />
+    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1639492889586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639492889586" />
+    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1639492889586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639492889586" />
+    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1639492889586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639492889586" />
+=======
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1639643265248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1639643265248" />
+>>>>>>> bf4b8b69508fdca2139892685c3199d9474a2a9d
+>>>>>>> 704b979adb3beae5542808bccb082523aaba7eb9
     <state x="425" y="187" key="run.anything.popup" timestamp="1639024750373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -83,5 +159,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1639031041894" />
+>>>>>>> c46de927b3174730a55c69ea49547408e5b5cb67
   </component>
 </project>

@@ -17,6 +17,14 @@ const taskSchema = mongoose.Schema({
     user: {
         ref: "User",
         type: mongoose.Schema.Types.ObjectId
+    },
+    candidates: [{
+        ref: "User",
+        type: mongoose.Schema.Types.ObjectId
+    }],
+    executor: {
+        ref: "User",
+        type: mongoose.Schema.Types.ObjectId,
     }
 })
 

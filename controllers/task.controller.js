@@ -17,6 +17,7 @@ module.exports.taskController = {
         longitude,
         price,
         user: req.user.id,
+        executor: null
       })
 
       res.json(newTask)
@@ -78,4 +79,55 @@ module.exports.taskController = {
       res.json({ error: "Ошибка при изменении" })
     }
   },
+  addCandidate: async (req, res) => {
+  try {
+    const candidate = req.user.id
+    const { id } = req.params
+
+    const task = await Task.findById(id)
+
+    console.log(req.user.id)
+
+    if (!task.candidates.indexOf(candidate)){
+      return res.json({error: "Вы уже откликнулись"})
+    }
+
+    if(task.executor){
+      return res.json({error: "Задание уже начато"})
+    }
+
+    task.candidates.push(candidate)
+    task.save()
+    res.json({message: "Вы откликнулись"})
+  }catch (e) {
+    res.json({error: "Ошибка при отклике"})
+  }
+  },
+  addExecutor: async (req, res) => {
+    try {
+      const { idUser } = req.body
+      const { id } = req.params
+
+      await Task.findByIdAndUpdate(id, { executor: idUser, status: 1 })
+
+      res.json({message: "Вы выбрали исполнителя"})
+    } catch (e) {
+      res.json({error: "Ошибка при выборе исполнителя"})
+    }
+  },
+  completeTask: async (req, res) => {
+    try{
+      const { id } = req.params
+
+      await Task.findByIdAndUpdate(id, { executor: null, status: 3 })
+
+      res.json({message: "Задание завершено"})
+    }catch (e) {
+      res.json({error: "Ошибка при завершении задании"})
+    }
+  }
 }
+
+
+
+

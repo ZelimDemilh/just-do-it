@@ -108,7 +108,7 @@ module.exports.taskController = {
       const { idUser } = req.body
       const { id } = req.params
 
-      await Task.findByIdAndUpdate(id, { executor: idUser, status: 1 })
+      await Task.findByIdAndUpdate(id, { executor: idUser, status: 1, candidates: [] })
 
       res.json({message: "Вы выбрали исполнителя"})
     } catch (e) {

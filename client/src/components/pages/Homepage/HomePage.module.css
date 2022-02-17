@@ -38,3 +38,38 @@ ul {
   color: white;
   font-size: 14px;
 }
+
+.format_zadanie {
+    background-color:#fffafa;
+    width: 400px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.frilans_proect {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.word_SecondSlide {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn_zakaz {
+    background-color:  rgba(47,191,113) ;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .4s;
+
+}
+
+.btn_zakaz:hover {
+    background-color: rgb(25, 191, 77);
+    transition: .4s;
+
+}

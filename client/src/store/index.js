@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import registry from "./registrySlice";
-import signIn from "./signInSlice";
-import categories from "./categoriesSlice";
-import task from "./taskSlice";
-import users from "./usersSlice";
+import registry from "./registrySlice"
+import signIn from "./signInSlice.js";
+import categories from "./categoriesSlice.js";
+import task from "./taskSlice.js";
+import users from "./usersSlice.js";
 import thunk from "redux-thunk";
 import { logger } from "redux-logger";
 

@@ -37,15 +37,6 @@ export const userResponse = createAsyncThunk(
     }
 )
 
-// export const completeTask = createAsyncThunk(
-//     "tasks/completeTask",
-//     async function (id, {rejectWithValue}) {
-//
-//       const res = await fetch("")
-//
-//     }
-// )
-
 export const addExecutor = createAsyncThunk(
     "tasks/addExecutor",
     async function ({id, idUser} , {rejectWithValue}) {
@@ -87,28 +78,28 @@ export const addExecutor = createAsyncThunk(
 export const addTaskForm = createAsyncThunk(
   "taskForm/addTaskForm",
   async function ({
-    heading: heading,
-    description: description,
-    price: price,
-    category: category,
-    latitude: latitude,
-    longitude: longitude,
+    heading,
+    description,
+    price,
+    category,
+    latitude,
+    longitude,
   }, {rejectWithValue}) {
     try {
       const res = await fetch("http://localhost:6557/tasks/add", {
         method: "POST",
-        body: JSON.stringify({
-          header: heading,
-          description: description,
-          price: price,
-          category: category,
-          latitude: latitude,
-          longitude: longitude,
-        }),
         headers: {
           "Content-type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
+        body: JSON.stringify({
+          header: heading,
+          description,
+          price,
+          category,
+          latitude,
+          longitude,
+        }),
       })
       const data = await res.json()
 

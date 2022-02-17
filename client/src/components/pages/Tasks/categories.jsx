@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import img from './assets/arrow.png'
 import cl from "./tasks.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { uploadTasks } from "../../../store/taskSlice";
@@ -12,7 +11,6 @@ import ListGroup from "react-bootstrap/ListGroup";
 const TasksCategories = () => {
   const tasks = useSelector((state) => state.task.task);
   const categories = useSelector((state) => state.categories.categories);
-  const preloader = useSelector((state) => state.task.pending);
   const users = useSelector((state) => state.users.users);
 
 
@@ -22,13 +20,9 @@ const TasksCategories = () => {
 
   useEffect(() => {
     dispatch(uploadTasks());
-  }, [dispatch]);
-  useEffect(() => {
     dispatch(uploadCategories());
-  }, [dispatch]);
-  useEffect(() => {
     dispatch(getUsers())
-  }, [dispatch])
+  }, [dispatch]);
 
   const handleChange = (e) => {
     setText(e.target.value);
@@ -47,65 +41,6 @@ const TasksCategories = () => {
     height: "300px",
     zoom: 10,
   });
-
-  // if (preloader) {
-  //   return (
-  //     <div>
-  //       <div className="row">
-  //         <div className="map col-3">
-  //           <iframe
-  //             src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d0b3f0796e7a4765c711545cdc89dbc593eaccf0b4c516af67bb4f6b3bc726d&amp;source=constructor"
-  //             width="245"
-  //             height="245"
-  //             frameBorder="0"
-  //             className="
-  //           border border-dark rounded mx-1 mb-1
-  //           shadow
-  //           "
-  //           />
-  //           <div className="border border-dark rounded mx-1 col-8">
-  //             <nav className="nav flex-column text-center">
-  //               <b className="mt-2">Категории</b>
-  //               <hr />
-  //               {categories.map((item) => {
-  //                 return (
-  //                   <>
-  //                     <a className="text-dark my-2" href={`/tasks/${item._id}`}>
-  //                       {item.name}
-  //                     </a>
-  //                     <hr />
-  //                   </>
-  //                 );
-  //               })}
-  //             </nav>
-  //           </div>
-  //         </div>
-  //         <div className="col-md-6">
-  //           <div className="input-group mb-5">
-  //             <input
-  //               type="text"
-  //               className="form-control"
-  //               placeholder="Напишите с чем вам нужна помощь"
-  //               aria-label="Recipient's username"
-  //               aria-describedby="basic-addon2"
-  //             />
-  //             <div className="input-group-append">
-  //               <button className="btn btn-outline-danger" type="button">
-  //                 Найти
-  //               </button>
-  //             </div>
-  //           </div>
-  //           <div className={cl.loader}></div>
-  //         </div>
-  //         <div className="col-1">
-  //           <div className="arrow-block">
-  //             {/*<a href="#"><img src={img} alt="" width="80" className="arrow"/></a>*/}
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
 
   return (
     <div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { NavLink } from "react-router-dom";
 import cl from "../HomePage.module.css";
 import icon1 from "../Iconly/icon1.png";
 import icon2 from "../Iconly/icon2.png";

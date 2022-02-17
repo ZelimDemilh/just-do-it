@@ -25,9 +25,6 @@ const AddTask = () => {
 
   useEffect(() => {
     dispatch(uploadCategories());
-  }, [dispatch]);
-
-  useEffect(() => {
     dispatch(profile());
   }, [dispatch]);
 

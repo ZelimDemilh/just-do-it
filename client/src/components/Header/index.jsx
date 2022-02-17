@@ -62,10 +62,6 @@ const Header = () => {
               <ExitToAppIcon />
             </Button>
           ) : null}
-
-          {/*<NavLink to="/registry" type="button" className="btn btn-outline-danger me-2 ">*/}
-          {/*        Зарегистрироваться*/}
-          {/*</NavLink>*/}
         </div>
       </header>
     </div>

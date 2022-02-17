@@ -54,7 +54,7 @@ module.exports.taskController = {
   },
   getTaskById: async (req, res) => {
     try {
-      const { id } = req.params.id
+      const { id } = req.params
       const task = await Task.findById()
       res.json(task)
     } catch (e) {

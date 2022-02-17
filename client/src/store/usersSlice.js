@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { uploadTasks } from './taskSlice';
 
 export const getUsers = createAsyncThunk("users/get", async function () {
   const res = await fetch("http://localhost:6557/users/");

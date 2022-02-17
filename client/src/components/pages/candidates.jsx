@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {NavLink, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {addExecutor, uploadTasks} from "../../store/taskSlice";
 import {getUsers} from "../../store/usersSlice";
@@ -7,18 +7,15 @@ import {Badge, Button, Card} from "react-bootstrap";
 import {uploadCategories} from "../../store/categoriesSlice";
 
 const Candidates = () => {
+
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(uploadTasks())
-    }, [dispatch])
-    useEffect(() => {
         dispatch(uploadCategories())
-    }, [dispatch])
-    useEffect(() => {
         dispatch(getUsers())
     }, [dispatch])
-
+    
     const { id } = useParams();
 
     const task = useSelector(state => state.task.task.filter((task) => task._id === id))

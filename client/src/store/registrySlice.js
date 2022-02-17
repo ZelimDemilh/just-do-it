@@ -50,6 +50,4 @@ const registrySlice = createSlice({
   },
 });
 
-// export const {} = registrySlice.actions
-
 export default registrySlice.reducer;

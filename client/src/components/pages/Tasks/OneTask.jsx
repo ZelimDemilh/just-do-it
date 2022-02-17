@@ -14,9 +14,6 @@ const OneTask = () => {
 
   useEffect(() => {
     dispatch(uploadCategories());
-  }, [dispatch]);
-
-  useEffect(() => {
     dispatch(uploadTasks());
   }, [dispatch]);
 
@@ -82,8 +79,6 @@ const OneTask = () => {
                   return <p> Вы уже сделали отклик</p>
                 }
               })}
-              {/*{singleTaskCategory[0].candidates.indexOf(userDate._id)?*/}
-              {/*    <span onClick={handleResponse} className="btn btn-success">Откликнуться</span>:<p> Вы уже сделали отклик</p>}*/}
             </div>
             <div className="col">
               <NavLink to={`/tasks/`}>

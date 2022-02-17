@@ -26,9 +26,6 @@ const Geolacation = () => {
         <Map defaultState={{ center: position, zoom: 14 }} />
       </div>
     </YMaps>
-    // <div>
-    //     {getMyLocation()}
-    // </div>
   );
 };
 

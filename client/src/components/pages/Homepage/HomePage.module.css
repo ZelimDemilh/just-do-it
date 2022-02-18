@@ -40,11 +40,13 @@ ul {
 }
 
 .format_zadanie {
-    background-color:#fffafa;
-    width: 400px;
+    background-color: white;
+    width: 500px;
     margin-left: 30px;
     text-align: left;
-}
+    padding: 20px;
+    box-shadow: 0 0 5px 5px rgb(234, 255, 235)
+ }
 
 .frilans_proect {
     font-size: 20px;
@@ -72,4 +74,12 @@ ul {
     background-color: rgb(25, 191, 77);
     transition: .4s;
 
+}
+
+.text_SecondSlide {
+    color: black;
+}
+
+.header_SecondSlide {
+    color: black;
 }

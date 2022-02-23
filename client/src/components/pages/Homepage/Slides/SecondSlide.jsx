@@ -31,7 +31,10 @@ const SecondSlide = () => {
               получите лучшие предложения по цене, срокам от фрилансеров
             </span>
               <br/>
-              <button className={`${cl.btn_zakaz}`}> Разместить Заказ</button>
+              <div className={`${cl.SecondSlide_img_btn}`}>
+                  <button className={`${cl.btn_zakaz}`}> Разместить Заказ</button>
+                  <img className={`${cl.image_SecondSlide}`} src="https://freelancehunt.com/static/images/frontpage/clock_man.png" alt=""/>
+              </div>
 
           </div>
           <div
@@ -43,8 +46,10 @@ const SecondSlide = () => {
             и фрилансеры предложат <br/>
             уже готовые решения
             </span><br/>
-
-              <button className={`${cl.btn_zakaz}`}> Выбрать заказ</button>
+                <div className={`${cl.SecondSlide_img_btn}`}>
+                    <button className={`${cl.btn_zakaz}`}> Выбрать фрилансера</button>
+                    <img className={`${cl.image_SecondSlide}`}  src="https://freelancehunt.com/static/images/frontpage/bulb_man.png" alt=""/>
+                </div>
 
           </div>
         </div>

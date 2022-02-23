@@ -59,16 +59,7 @@ ul {
     font-weight: 600;
 }
 
-.btn_zakaz {
-    background-color:  rgba(47,191,113) ;
-    color: white;
-    border: 0;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    transition: .4s;
 
-}
 
 .btn_zakaz:hover {
     background-color: rgb(25, 191, 77);
@@ -83,3 +74,24 @@ ul {
 .header_SecondSlide {
     color: black;
 }
+
+.SecondSlide_img_btn {
+    position: relative;
+}
+
+.image_SecondSlide {
+    position: absolute;
+    right: 0;
+}
+
+.btn_zakaz {
+    background-color:  rgba(47,191,113) ;
+    color: white;
+    width: 190px;
+    height: 35px;
+    border: 0;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: .4s;
+  }

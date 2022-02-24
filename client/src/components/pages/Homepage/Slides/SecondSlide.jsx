@@ -43,9 +43,10 @@ const SecondSlide = () => {
             {/*<img src={icon2} alt="" className="my-3" />*/}
             <h5 className={`${cl.frilans_proect}`}>Выбираете в каталоге исполнителя</h5>
             <span className={`${cl.text_SecondSlide}`}>
-            и фрилансеры предложат <br/>
+            и фрилансеры предложат
             уже готовые решения
             </span><br/>
+
                 <div className={`${cl.SecondSlide_img_btn}`}>
                     <button className={`${cl.btn_zakaz}`}> Выбрать фрилансера</button>
                     <img className={`${cl.image_SecondSlide}`}  src="https://freelancehunt.com/static/images/frontpage/bulb_man.png" alt=""/>

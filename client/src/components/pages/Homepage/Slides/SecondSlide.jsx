@@ -11,43 +11,57 @@ const SecondSlide = () => {
 
   return (
     <div
-      className={`d-flex flex-column text-center justify-content-center ${cl.backImg2}`}
-    >
-      <div className="text-center text-white m-4">
-        <h2>Как это работает?</h2>
-      </div>
-      <div
-        className={`w-100 d-flex py-3 align-items-center justify-content-around text-center`}
-      >
-        <div className="w-25 p-3 h-100 border-end border-2 bg-black bg-opacity-25">
-          <img src={icon1} alt="" className="my-3" />
-          <h5>Вы хотите сделать заказ</h5>
-          <span>
-            Расскажите, что необходимо разработать для себя или вашего бизнеса
-          </span>
+     >
+      <div className="container">
+        <div className="text-center text-white m-4">
+          <h2 className={`${cl.header_SecondSlide}`}>Выбирайте удобный формат сотрудничества</h2>
         </div>
-        <div className="w-25 p-3 h-100 border-end border-2 bg-black bg-opacity-25">
-          <img src={icon2} alt="" className="my-3" />
-          <h5>Выбираете в каталоге исполнителя</h5>
-          <span>Сравнивайте опыт исполнителей, стоимость сроки</span>
+        <div
+          className={`w-100 d-flex py-3 align-items-center justify-content-around text-center`}
+        >
+          <div
+            className={`${cl.format_zadanie}`}
+          >
+            <div className={`${cl.word_SecondSlide}`}>
+              {" "}
+              Создайте{" "}
+              <span className={`${cl.frilans_proect}`}> фриланс проетк</span>
+            </div>
+            <span  className={`${cl.text_SecondSlide}`}>
+              получите лучшие предложения по цене, срокам от фрилансеров
+            </span>
+              <br/>
+              <div className={`${cl.SecondSlide_img_btn}`}>
+                  <button className={`${cl.btn_zakaz}`}> Разместить Заказ</button>
+                  <img className={`${cl.image_SecondSlide}`} src="https://freelancehunt.com/static/images/frontpage/clock_man.png" alt=""/>
+              </div>
+
+          </div>
+          <div
+            className={` ${cl.format_zadanie}`}
+          >
+            {/*<img src={icon2} alt="" className="my-3" />*/}
+            <h5 className={`${cl.frilans_proect}`}>Выбираете в каталоге исполнителя</h5>
+            <span className={`${cl.text_SecondSlide}`}>
+            и фрилансеры предложат
+            уже готовые решения
+            </span><br/>
+
+                <div className={`${cl.SecondSlide_img_btn}`}>
+                    <button className={`${cl.btn_zakaz}`}> Выбрать фрилансера</button>
+                    <img className={`${cl.image_SecondSlide}`}  src="https://freelancehunt.com/static/images/frontpage/bulb_man.png" alt=""/>
+                </div>
+
+          </div>
         </div>
-        <div className="w-25 p-3 h-100 border-end border-2 bg-black bg-opacity-25">
-          <img src={icon3} alt="" className="my-3" />
-          <h5>Обсуждаете заказ</h5>
-          <span>
-            Общайтесь с исполнителем с помощью контактных данных в профиле
-          </span>
+        <div className="mt-5">
+          <Button
+            href={token ? "/tasks" : "/signIn"}
+            variant="outline-light p-3"
+          >
+            Начни прямо сейчас
+          </Button>
         </div>
-        <div className="w-25 p-3 h-100 bg-black bg-opacity-25">
-          <img src={icon4} alt="" className="my-3 text-white" />
-          <h5>Вы получаете результат, а исполнитель оплату</h5>
-          <span>Сравнивайте опыт исполнителей, стоимость сроки</span>
-        </div>
-      </div>
-      <div className="mt-5">
-        <Button href={token ? "/tasks" : "/signIn"} variant="outline-light p-3">
-          Начни прямо сейчас
-        </Button>
       </div>
     </div>
   );

@@ -17,12 +17,14 @@ const HomePage = () => {
 
   return (
     <>
+
       <Helmet>
         <title>Just-Do-It</title>
       </Helmet>
       <div className="w-100">
         <FirstSlide />
         <SecondSlide />
+
         <ThirdSlide />
       </div>
     </>

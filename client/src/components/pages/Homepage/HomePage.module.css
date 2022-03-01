@@ -38,3 +38,70 @@ ul {
   color: white;
   font-size: 14px;
 }
+
+.format_zadanie {
+    background-color: white;
+    width: 500px;
+    margin-left: 30px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px rgb(234, 255, 235);
+    height: 270px;
+
+ }
+
+.frilans_proect {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.word_SecondSlide {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.btn_zakaz:hover {
+    background-color: rgb(25, 191, 77);
+    transition: .4s;
+
+}
+
+.text_SecondSlide {
+    color: black;
+}
+
+.header_SecondSlide {
+    color: black;
+}
+
+.SecondSlide_img_btn {
+    position: relative;
+}
+
+.image_SecondSlide {
+    position: absolute;
+    right: 0;
+  }
+
+.btn_zakaz {
+    background-color:  rgba(47,191,113) ;
+    color: white;
+    width: 190px;
+    height: 35px;
+    border: 0;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: .4s;
+  }
+
+
+.ThirdSlide_Zag {
+    color:  rgba(172,174,185);
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
